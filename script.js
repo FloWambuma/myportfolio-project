@@ -1,4 +1,4 @@
-// ======== Resume Tabs (if you add buttons for switching sections) ========
+// ======== Resume Tabs (for switching sections if you add buttons) ========
 const resumeBtns = document.querySelectorAll('.resume-btn');
 const resumeDetails = document.querySelectorAll('.resume-detail');
 
@@ -26,7 +26,7 @@ document.querySelectorAll("header nav a").forEach(link => {
   });
 });
 
-// ======== Mobile Menu Toggle (optional if you want hamburger menu later) ========
+// ======== Mobile Menu Toggle (optional for hamburger menu) ========
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector("header nav");
 
