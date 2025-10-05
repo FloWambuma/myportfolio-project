@@ -272,6 +272,46 @@ section.home {
   gap: 25px;
 }
 
+/* Portfolio Items - Cleaner Card Layout */
+.portfolio-item {
+  background: var(--accent-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-item .overlay {
+  padding: 15px;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  background: none; /* no dark box over image */
+}
+
+/* Light theme text fix */
+body.light-theme .portfolio-item .overlay {
+  color: #000;
+}
+
 .card {
   background: var(--accent-color);
   border-radius: 12px;
